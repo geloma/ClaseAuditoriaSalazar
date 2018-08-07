@@ -1,0 +1,167 @@
+﻿
+Tipos de dato
+-----------------
+Letra - Char            x = 'a';
+Texto - String          x = "hola";
+Entero - Integer        x = 123;
+Real/Decimal - Float    x = 0.2;
+Logico - Boolean        x = true;
+
+Estructuras de datos
+--------------------
+Vector - Array                 x = [1, 2]; // x[0] es 1
+Matriz - Array of Array        x = [ [1,2] , [3,4] ]; // x[1,0] es 3
+Arbol - Binary Tree            ...
+Lista - List                   x = ["hola", "212", 123, 'a', true]; // x[0] es "hola" 
+Diccionario - Indexed array    x = {"pos1": 55, "pos2": 300}; // x["pos1"] ó x.pos1
+
+Condiciones
+------------
+Si - If
+Sino - Else
+depende - Switch
+
+Ciclos
+-------
+Para - For
+Mientras - While
+Para cada uno - Foreach
+
+
+Javascript
+----------
+- Facil
+- Lenguaje de programación interpretado
+- Debilmente tipado
+- Basado en prototipos (Crear objetos)
+
+NodeJS
+------
+Node.js es un entorno en tiempo de ejecución multiplataforma, 
+de código abierto, para la capa del servidor basado en el 
+lenguaje de programación 
+
+NPM 
+------
+Es el manejador de paquetes por defecto para Node.js, 
+un entorno de ejecución para JavaScript.
+
+GIT
+-----
+Controlador de version y cambios del proyecto,
+permite la validación e integración de cambios de una o varias
+fuentes de código
+
+	 | MASTER                | MARI            | JUANA            |
+---------|-----------------------|-----------------|------------------|
+Dia 0    | Inicializacion Proyec | -               | -                | 
+Dia 1    | -                     | creo archivo1   | creo archivo2    | 
+Dia 2    | A1[Mari], A2[Juana]   | edito archivo2  | -                |
+Dia 3    | A1[Mari], A2[Mari]    | -               | -                |
+-----------------------------------------------------------------------
+
+Herramientas
+------------
+Integrated Development Environment IDE. (Visualstudio Code)
+Interprete (NodeJS)
+GIT (Control de versiones)
+Base de datos (MySQL)
+
+Aproximación de los Lenguajes
+-----------------------------
+NodeJS -> Javascript Servidor                    -> Construccion de la base de la aplicacion 
+JS -> Javascript Cliente                         -> Interaccion Usuario
+CSS -> Cascading Style Sheet                     -> Detalles visuales
+HTML -> Hyper Text Markup Language               -> Orden de componentes y detalles visuales
+Ajax -> Peticiones asincronas Javascript cliente -> Comunicador base y usuario
+SQL -> Structured Query Language                 -> Comunicador base y base de datos
+
+Ejemplo Aproximación
+--------------------
+Yo como [cliente]
+quiero [la carta para ver y luego pedir una carnet]
+con la finalidad de [llevarle a mi familia]
+
+Restaurante: Navegador o Aplicación
+Carta: Formulario HTML,  JS, CSS 
+Mesero: AJAX
+Estructura cocina: NodeJS
+Cocinero en la cocina: Servicio de NodeJS
+Elaboración Comida: Consulta base de datos
+
+Simil: 
+Yo como [auditor],
+quiero [un formulario con entradas de texto nombre y nit, y un boton negro]
+con la finalidad de [Guardar empresas que van a ser auditadas]
+
+Transporte de información
+-------------------------
+
+localhost:8000/index.html                         localhost:8000/guardar
+ejemplo.com:80/index.html                         ejemplo.com:80/guardar
+
+    HTML                                            Node JS                           NODE JS          ________
+|----------|                                      |----------|                      |----------|      <________>
+|	   | <=================================>  |          | ===================> |          | ==>  |        |
+|index.html|        AJAX <=|                      |server.js | <==================  |modelo.js | <==  |DB MYSQL| 
+|----------| <====|        |== Peticion con       |----------|                      |----------|      <________>
+     _____________|____________info del formul.
+     |           _________     |
+     |	Nombre: |_________|    |
+     |	   Nit: |_________|    |
+     |         _________       |
+     |        |_Guardar_|      | <- Button: Javascript (evento onclick)
+     |_________________________| <- Button: Ancho, Input: Nombre y NIT  
+                                    Son combinacion de CSS y HTML
+                        
+
+Instalacion NodeJS
+--------------------
+
+1. Abrir:
+https://nodejs.org/es/
+
+2. Descargar Node 8.11.3:
+https://nodejs.org/dist/v8.11.3/node-v8.11.3-x64.msi
+
+3. Instalar.
+
+4. Windows + R y escribir cmd
+
+5. Dentro del cmd, escribir "node"
+  - CTRL + C dos veces para salir del programa
+
+Instalacion Git 
+------------------
+https://git-scm.com/
+
+
+Comandos Utiles
+
+Abrir node en consola 
+Windows + R y escribir cmd
+~$ node 
+
+Cerrar node
+CTRL + C (dos veces)
+
+Version de node
+~$ node --version
+
+Version de npm 
+~$ npm --version
+
+Limpiar consola Windows
+~$ cls
+
+Version de npm
+> npm --version
+
+Guardar todos los cambios de git
+> git add -A
+
+Asignar un nombre al cambio de git
+> git commit -m "Inicializacion"
+
+Subir los cambios al repositorio remoto
+> git push origin [branch]
